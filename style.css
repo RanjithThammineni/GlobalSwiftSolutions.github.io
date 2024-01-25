@@ -39,6 +39,10 @@ text-decoration: none;
 color: white;
 float: left;
 }
+header .logo a{
+    text-decoration: none;
+    color: white;
+}
 
 header nav {
 float: right;
@@ -199,79 +203,61 @@ line-height: 1.5;
 }
 
 #individual {
-padding: 100px; /* Adjust the padding as needed */
+    padding: 50px; /* Adjust the padding as needed */
 }
 
 .card-container {
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
 }
-
 
 .card {
-
-width: 200px;
-height:100px;
-perspective: 1000px;
-margin: 20px;
-padding: 15px;
-border-radius: 25px;
-
-
-
-}
-.card h3{
-text-align: center;
-font-weight: bold;
+    width: 300px; /* Adjust the card width as needed */
+    height: 150px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 1s ease;
+    overflow: hidden; /* Hide overflow content */
+    position: relative;
 }
 
-.card-inner {
-position: relative;
-width: 100%;
-height: 100%;
-text-align:center;
-
-transition: transform 0.6s;
-transform-style: preserve-3d;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.card:hover {
+    transform: scale(1.1);
+    background-color: black;
 }
 
-.card:hover .card-inner {
-transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
-position: absolute;
-width: 100%;
-height: 100%;
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
-}
-
-
-
-.card-front {
-background-color: lightseagreen;
-color: black;
-
-}
-
-.card-back {
-background-color: #2980b9;
-color: white;
-transform: rotateY(180deg);
+.card h3 {
+    font-weight: bold;
+    text-align:center;
+    padding-top: 30px
+    
 }
 
 .card p {
-max-height: 0;
-overflow: hidden;
-transition: max-height 0.3s ease;
-}
-.card:hover p {
-max-height: 1000px; /* Adjust the max height as needed */
+    margin-top: 5px;
+    line-height: 1.5;
+    color: white;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 1s ease; /* Add transition for opacity */
 }
 
+.card:hover h3 {
+    opacity: 1; /* Set opacity to 0 on hover */
+    color: white;
+    padding-top: 5px;
+}
+
+.card:hover p {
+    opacity: 1; /* Set opacity to 1 on hover */
+    padding-top: 10px;
+}
+#individual {
+    padding: 50px; /* Adjust the padding as needed */
+}
 
 #enquiry {
 padding: 50px; /* Adjust the padding as needed */
