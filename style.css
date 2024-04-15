@@ -326,7 +326,16 @@ padding: 50px; /* Adjust the padding as needed */
 #enquiry h2{
 text-align: center;
 }
-
+.whatsapp-icon {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    z-index: 1000;
+  }
+  .whatsapp-icon img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
 form {
 max-width: 300px;
 height: 350px;
@@ -382,4 +391,78 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    header .logo {
+        margin-left: 5px; /* Further adjusted for smaller screens */
+        font-size: medium; /* Further adjusted for smaller screens */
+    }
+
+    header nav {
+        padding: 10px;
+    }
+
+    header nav a {
+        font-size: small; /* Adjusted for smaller screens */
+        padding: 10px;
+    }
+
+    main {
+        margin-top: 55px; /* Adjusted for smaller screens */
+        margin-left: 5px; /* Further adjusted for smaller screens */
+        margin-right: 5px; /* Further adjusted for smaller screens */
+    }
+
+    .text {
+        width: 80%; /* Adjusted for smaller screens */
+    }
+
+    .subheading {
+        margin: 0 5px; /* Further adjusted for smaller screens */
+    }
+    /* Additional adjustments for responsiveness */
+    section {
+        padding: 20px; /* Adjusted for smaller screens */
+    }
+
+    section h2 {
+        font-size: 24px; /* Adjusted for smaller screens */
+    }
+
+    .card-container {
+        text-align: center;
+        margin-top: 30px; /* Adjusted for smaller screens */
+    }
+
+    .card {
+        width: 90%; /* Adjusted for smaller screens */
+        margin: 15px auto; /* Adjusted for smaller screens */
+    }
+
+    .card h3 {
+        font-size: 18px; /* Adjusted for smaller screens */
+    }
+
+    .card p {
+        font-size: 14px; /* Adjusted for smaller screens */
+    }
+
+    .whatsapp-icon {
+        bottom: 20px; /* Adjusted for smaller screens */
+    }
+
+    form {
+        max-width: 90%; /* Adjusted for smaller screens */
+        margin: 0 auto;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    button {
+        margin-top: 20px; /* Adjusted for smaller screens */
+    }
 }
