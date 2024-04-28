@@ -73,7 +73,7 @@ header nav a:hover {
 color: #918b81;
 }
 
-@media (max-width: 900px) {
+/*@media (max-width: 600px) {
 html {
 scroll-padding-top: 70px;
 }
@@ -86,7 +86,7 @@ padding-right: 0px;
 text-align: center;
 border-top: 1px solid white;
 }
-}
+}*/
 
 
 /* nav {
@@ -259,7 +259,7 @@ line-height: 1.5;
     text-align: center;
     margin-top: 50px;
 }
-h1 {
+h2 {
     color: #333;
 }
 .subheadings {
@@ -268,6 +268,7 @@ h1 {
     margin-top: 30px;
 }
 .subheading {
+    
     margin: 0 20px;
     text-align: left;
     border-radius: 5px;
@@ -373,6 +374,7 @@ textarea,
 button {
 margin-bottom: 25px;
 }
+
 .whatsapp-icon {
     position: fixed;
     bottom: 70px;
@@ -385,7 +387,7 @@ margin-bottom: 25px;
   }
 
 footer {
-    background-color: #333;
+    background-color: #333;   
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -393,4 +395,137 @@ footer {
     bottom: 0;
     width: 100%;
 }
-/* Add media query for smaller screens */
+
+ 
+@media screen and (max-width:600px)
+ {
+    header {
+        position: fixed;
+        top: 0;
+        height: 60px;
+        z-index: 1000;
+        white-space: normal;
+        width:100;
+        background-color: #333;
+        margin-bottom: 1px solid rgb(243, 8, 8);
+        }
+    header .logo {
+            margin-top: 15px;
+            margin-left: 30px;
+            font-size:x-large;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            float: left;
+            }
+    header .logo a{
+            text-decoration: none;
+            color: white;
+        }
+            
+    header nav {
+            float: right;
+            padding: 2px;
+            padding-right: 5px;
+        }
+    header nav a {
+            font-size: large;
+            font-weight: bold;
+            text-decoration: none;
+            text-align:center;
+            color: white;
+            padding: 20px;
+            margin-top: 15px;
+            padding-bottom: 5px;
+            
+            transition: color 0.2s;
+            
+            }
+    header nav a:hover {
+            color: #918b81;
+    }
+    main{
+        width: 100%;
+    }
+            
+  
+        section {
+            width: 100%;
+        }
+        #slideshow{
+            height: 50px;
+            padding: 150px;
+            padding-bottom: 25px;
+        }
+        .text {
+                top: 25px; 
+                margin-top: 25px; 
+            }
+        .main-text {
+                font-size: 20px; 
+            }
+        .sub-text {
+                font-size: 15px; 
+                padding-top: 7px; 
+            }
+        .image {
+                margin-top: 25px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 150px;
+                height: 100px;
+                object-fit: cover;
+                margin-right: 90px;
+                margin-top: 20px;
+            }
+        .dots {
+                margin-top: 25px; 
+            }
+        .dot {
+                height: 8px;
+                width: 8px; 
+                margin: 0 3px; 
+            }
+            #aboutus {
+                margin: 0 auto; 
+                padding: 100px;
+                text-align:justify;
+                padding-top: 50px;
+                }
+                
+            #aboutus h2 {
+                font-size: 36px;
+                margin-bottom: 20px;
+                }
+                
+                
+                
+            #aboutus p {
+                font-size: 20px;
+                margin-top: 20px;
+                text-align: justify;
+                line-height: 1.5;
+                }
+            #individual h2{
+                font-size: 34px;
+                
+            }
+            .subheadings {
+                    display: block;
+                    width: 100%;
+                    
+                    margin-bottom: 20px;
+
+                }
+            .subheading{
+                padding-bottom: 20px;
+            }
+           
+                
+            
+            
+            
+        }            
+        
